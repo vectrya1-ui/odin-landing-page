@@ -1,0 +1,10 @@
+body {
+    display: flex;
+    flex-direction: column;
+    padding: 0 200px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
