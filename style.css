@@ -1,10 +1,246 @@
+@font-face {
+    font-family: "magnolia-script";
+    src: url("fonts/Magnolia_Script.woff") format("woff");
+}
+
+@font-face {
+    font-family: "super-warming";
+    src: url("fonts/Super_Warming.woff") format("woff");
+}
+
 body {
     display: flex;
     flex-direction: column;
-    padding: 0 200px;
+    padding: 0;
+    margin: 0;
+    font-family: "super-warming", Georgia, 'Times New Roman', Times, serif;
 }
+
 
 .header {
     display: flex;
+    align-items: center;
+    padding: 10px 120px;
+    background-color: #d78e9e;
+    color: #A9032C;
+    position: sticky;
+    top: 0;
+}
+
+.heading,
+.menu-title,
+#call-to-action {
+    text-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+#logo {
+    flex: 1;
+}
+
+#logo img {
+    width: 150px;
+    height: auto;
+}
+
+.header-links {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-links a {
+    text-decoration: none;
+    color: #A9032C;
+    font-size: 20px;
+}
+
+.header-links ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.intro {
+    display: flex;
+    background-color: #A9032C;
+    color: #E8C8CF;
+    gap: 20px;
+    padding: 70px 120px;
+    align-items: center;
+}
+
+.intro-text {
+    flex: 2;
+    padding: 15px 20px;
+    font-size: 25px;
+}
+
+.intro-image {
+    flex: 1;
+}
+
+.intro-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px 0px #7f0121;
+}
+
+.menu img {
+    width: 180px;
+    border-radius: 8px;
+    border-color: #A9032C;
+    border-style: solid;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+}
+
+.menu-title {
+    background-color: #E8C8CF;
+    color: #A9032C;
+    margin: 0;
+    padding: 60px 0 40px 0;
+    text-align: center;
+    font-size: 40px;
+}
+
+.menu {
+    background-color: #E8C8CF;
+    color: #A9032C;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 60px;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu .text {
+    padding-top: 10px;
+}
+
+.flavor {
+    width: 200px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.customer-review-one,
+.customer-review-two {
+    display: flex;
+    padding: 50px 120px;
+    align-items: center;
+}
+
+.customer-review-one {
+    background-color: rgb(243, 201, 121);
+}
+
+.customer-review-two {
+    background-color: rgb(245, 181, 114);
+}
+
+.customer-review-one > .review-image{
+    flex: 1;
+}
+
+.customer-review-two > .review-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.customer-review-one > .review-image img,
+.customer-review-two > .review-image img {
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.customer-review-one > .review-image img {
+    box-shadow: 4px 4px 0px 0px rgb(220, 180, 105);
+}
+
+.customer-review-two > .review-image img {
+    box-shadow: 4px 4px 0px 0px rgb(228, 156, 80);
+}
+
+.customer-review-one > .review-text,
+.customer-review-two > .review-text {
+    flex: 2;
+    font-size: 32px;
+}
+
+.customer-review-one > .review-text {
+    color: rgb(251, 241, 228);
+}
+
+.customer-review-two > .review-text {
+    color: rgb(169,3,44);
+}
+
+.quote-name {
+    display: block;
+    text-align: right;
+    font-size: 26px;
+    padding-top: 20px;
+}
+
+.container {
+    padding: 20px 120px;
+    background-color: #A9032C;
+}
+.register {
+    display: flex;
+    background-color: #E8C8CF;
+    color: #A9032C;
+    width: 100%;
     justify-content: space-between;
+    align-items: center;
+    padding: 20px 45px;
+}
+
+.register-text {
+    flex: 3;
+}
+
+#call-to-action {
+    font-size: 35px;
+}
+
+#sign-up-button {
+    flex: 1;
+}
+
+#sign-up-button button {
+    flex-shrink: 0;
+}
+
+.footer {
+    text-align: center;
+    background-color: #d78e9e;
+    color: #A9032C;
+}
+
+.intro button,
+.register button {
+    font-family: "super-warming", Georgia, 'Times New Roman', Times, serif;
+    height: 50px;
+    width: 150px;
+    font-size: 20px;
+    border-color: #f6abbb;
+    background-color: #f5859d;
+    border-style: solid;
+    border-radius: 50px;
+    border-width: 4px;
+    color: rgb(246, 240, 231);
+    box-shadow: 0px 6px 0px 0px #7f0121; /* X-offset, Y-offset, Blur, Spread, Color */
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    box-shadow: 0 2px 0px 0px #7f0121;
+    transform: translateY(4px);
 }

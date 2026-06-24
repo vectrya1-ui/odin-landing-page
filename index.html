@@ -7,37 +7,66 @@
     </head>
     <body>
         <div class="header">
-            <div id="logo">Header Logo</div>
+            <div id="logo"><img src="images/logo.png"></div>
             <div class="header-links">
                 <ul>
-                    <li>header link one</li>
-                    <li>header link two</li>
-                    <li>header link three</li>
+                    <li><a href="">Our Mission</a></li>
+                    <li><a href="">Our Locations</a></li>
+                    <li><a href="">Contact Us</a></li>
                 </ul>
             </div>
         </div>
         <div class="intro">
-            <h1>This website is awesome</h1>
-            <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
-            <button>Sign up</button>
-            <img src="https://images.pexels.com/photos/5060290/pexels-photo-5060290.jpeg" width="300px">
+            <div class="intro-text">
+                <h1 class="heading">About Bella Gelo</h1>
+                <p>At Bella Gelo, we believe great gelato has the power to make any day a little sweeter. Inspired by the traditions of Italy and crafted with care, our gelato is made from quality ingredients and delivered straight to your door, so you can enjoy a taste of la dolce vita wherever you are.</p>
+                <p>From timeless classics to exciting seasonal flavors, every scoop is created to bring people together, celebrate special moments, or simply satisfy a well-deserved craving. Whether you're sharing with friends or keeping it all to yourself, Bella Gelo is here to make every delivery feel like a treat.</p>
+                <p>Because life's best moments deserve great gelato.</p>
+                <button>PLACE ORDER</button>
+            </div>
+            <div class="intro-image">
+                <img src="https://images.pexels.com/photos/8713075/pexels-photo-8713075.jpeg" alt="Top-down view of different gelato flavors.">
+            </div>
         </div>
+        <h2 class="heading menu-title">Our gelato flavors</h2>
         <div class="menu">
-            <img src="https://images.pexels.com/photos/8736488/pexels-photo-8736488.jpeg" width="150px">
-            <img src="https://images.pexels.com/photos/8736488/pexels-photo-8736488.jpeg" width="150px">
-            <img src="https://images.pexels.com/photos/8736488/pexels-photo-8736488.jpeg" width="150px">
-            <img src="https://images.pexels.com/photos/8736488/pexels-photo-8736488.jpeg" width="150px">
+            <div class ="flavor">
+                <img src="https://images.pexels.com/photos/5535554/pexels-photo-5535554.jpeg" alt="A scoop of strawberry gelato icecream.">
+                <div class="text">This is where a description of the flavor will go such as &lsquo;the pistachios used to make this gelato is locally grown!&rsquo;</div>
+            </div>
+            <div class ="flavor">
+                <img src="https://images.pexels.com/photos/5535554/pexels-photo-5535554.jpeg" alt="A scoop of strawberry gelato icecream.">
+                <div class="text">This is where a description of the flavor will go such as &lsquo;the pistachios used to make this gelato is locally grown!&rsquo;</div>
+            </div>
+            <div class ="flavor">
+                <img src="https://images.pexels.com/photos/5535554/pexels-photo-5535554.jpeg" alt="A scoop of strawberry gelato icecream.">
+                <div class="text">This is where a description of the flavor will go such as &lsquo;the pistachios used to make this gelato is locally grown!&rsquo;</div>
+            </div>
+            <div class ="flavor">
+                <img src="https://images.pexels.com/photos/5535554/pexels-photo-5535554.jpeg" alt="A scoop of strawberry gelato icecream.">
+                <div class="text">This is where a description of the flavor will go such as &lsquo;the pistachios used to make this gelato is locally grown!&rsquo;</div>
+            </div>
         </div>
-        <div class="description">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos aliquid eligendi quisquam facere maxime, deleniti accusamus non quae, nam suscipit voluptatem tenetur quibusdam similique! Fugit nisi quisquam est ab commodi!</p>
+        <div class="customer-review-one">
+            <div class="review-image"><img src="https://images.pexels.com/photos/14061041/pexels-photo-14061041.jpeg"></div>
+            <div class="review-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos aliquid eligendi quisquam facere maxime, deleniti accusamus non quae, nam suscipit voluptatem tenetur quibusdam similique! Fugit nisi quisquam est ab commodi!"<span class="quote-name">-Marcus Aurelius</span></div>
+            <!-- We use <span> here since if we created a <div> element, it would become a flex-item and our container would have three items horizontally. <span> is an inline element by default and is not considered a separate item. -->
         </div>
-        <div class="register">
-            <p>Call to action! It's time!</p>
-            <p>Sign up for our products by clicking that button right over there!</p>
-            <button>Sign up</button>
+        <div class="customer-review-two">
+            <div class="review-text">"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos aliquid eligendi quisquam facere maxime, deleniti accusamus non quae, nam suscipit voluptatem tenetur quibusdam similique! Fugit nisi quisquam est ab commodi!"<span class="quote-name">-Emperor Hadrian</span></div>
+            <div class="review-image"><img src="https://images.pexels.com/photos/1280380/pexels-photo-1280380.jpeg"></div>
+        </div>
+        <div class="container">
+            <div class="register">
+                <div class="register-text">
+                    <div id="call-to-action">Call to action! It's time!</div>
+                    Sign up for our products by clicking that button right over there!
+                </div>
+                <div id="sign-up-button"></div><button>Sign up</button></div>
+            </div>
         </div>
         <div class="footer">
-            <p>Copyright © The Odin Project 2026</p>
+            <p>Copyright © The Odin Project 2026 💖</p>
         </div>
     </body>
 </html>
